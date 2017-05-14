@@ -1,0 +1,62 @@
+关于this对象
+一、this引用的是函数据以执行的环境对象
+二、每个函数在被调用时都会自动获得两个特殊变量：this和argument，内部函数在搜索这连个变量时，只会搜索到其活动对象为止，因此永远不能直接访问外部函数中的这两个变量
+例如（自己想的例子）
+function Base(){};
+//设置动画
+Base.prototype.animate=function(attr,step,t){
+	for (var i = 0; i < this.elements.length; i ++) {
+		setInterval(function(){							this.elements[i].style[attr]=getStyle(this.elements[i],attr)+step+'px';
+		},t)
+	}
+	return this;
+}
+function(){this.elements[i].style[attr]=getStyle(this.elements[i],attr)+step+'px'}中的this只会在这个函数的活动对象中搜索this指什么(指window)，而不会接着往上搜索，是找不到Base中的this的，和普通变量不同，普通变量是沿着作用域链一直往上搜索，其实，实质也是一样的，this在这个函数中已经找到了，自然不会继续沿着作用域链继续搜索了。
+三、我的理解：1.直接调用函数this就是window，不论这个函数是否在其他函数内部调用
+              2.函数前面有东西比如：对象.函数，this就是这个对象
+
+
+动画闪烁
+1	2
+3
+
+	
+滑动导航的闪烁原因
+当滑块3从元素1移入2的时候，鼠标在2上面滑块3进入2就会把2遮住，如果指针正好在遮住区域，就会执行移出事件，当指针不在3上又会执行移入事件，如此反复，造成闪烁。
+正常情况下鼠标从1移入2也执行1的移出事件和2的移入事件，但这不是造成闪烁的原因。
+函数作用域
+	var a="hello";
+	var c="aa";
+	function b(){
+		alert(a);      //undefined
+		var a="world";
+		alert(a);      //world
+		alert(c)      //aa
+	}	
+	b();
+元素自定义属性
+<img data-src="images/p12.jpg" data-bigsrc="images/p12big.jpg" src="images/wait_load.jpg" class="wait_load" alt="" />
+var img2=img.querySelector("dl dt img");
+img2.dataset.bigsrc=11;
+alert(img2.dataset.src)  // images/p12.jpg
+alert(img2.getAttribute(data-src))   // images/p12.jpg
+alert(img2.bigsrc)     //undefined
+dataset对象IE11+，Chrome8+，firefox6.0+，opera11.10+，safari6+
+元素自定义属性在js中不可以通过（.属性名）的形式获得，但可以通过getAttribute（）方法和dataset对象取得
+Css
+margin永远是透明的
+相对定位的元素仍然处于文档流中，而绝对定位的元素则脱离了文档流。绝对定位的元素的top、left、botton、right的距离是该元素外边框到原点的距离，而不是content到原点的距离
+<ul>
+		<li >你</li>
+		<li >你</li> 
+		<li >你</li>
+</ul>
+列表标记前面出现的列表序号是属于<ul>标记，不在<li>标记里面
+<li>的padding-left属性会改变列表序号和<li>的文本之间的距离，要想改变<li>之间的距离最好用margin属性
+Width的%是相当于父元素content-box的%
+
+HTML
+如果要正确地被提交，每个输入字段必须设置一个 name 属性。
+单选按钮的name属性相同才能只能选一个
+同一页面，应避免使用相同的 name 与 id。
+
