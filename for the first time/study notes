@@ -1,0 +1,84 @@
+Task1
+基础还不够牢固，对HTML的学习还不够
+文本标题的控件必须使用 label 标签将其与其标题相关联。
+解释：
+有两种方式：
+将控件置于 label 内。
+label 的 for 属性指向控件的 id。
+推荐使用第一种，减少不必要的 id。如果 DOM 结构不允许直接嵌套，则应使用第二种。
+示例：
+<label><input type="checkbox" name="confirm" value="on"> 我已确认上述条款</label>
+<label for="username">用户名：</label> <input type="textbox" name="username" id="username">
+尽量不要使用按钮类元素的 name 属性。
+Task2
+用css做样式的时候遇到了一点小困难，有点像把两个元素中间对齐，而且没有用position，只用float、margin和padding，虽然写出来了，但是写的比较复杂，看了一下别人写的，简洁好多。而且我把width设置成了固定宽度，这样元素就不能随着浏览器视口大小改变，可以设置为百分比，元素宽度就会随着浏览器视口大小改变，但是当视口小到一定程度就会破坏页面布局，使页面混乱。
+Task3
+一、	Position和float有什么异同
+Position的原点是padding和border左上角的交点，相对定位没有脱离普通流，绝对定位脱离了普通流，相对定位的元素的原点为未定位时该元素的位置，仍然占用未定位时的空间，不影响其他元素的位置。如果元素只设置了position为absolute，未设置top和left，那么该元素的位置同没有设置绝对定位时的位置，而不是top和left为0时的位置。
+浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。
+由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+如下图所示，如果包含框太窄，无法容纳水平排列的三个浮动元素，那么其它浮动块向下移动，直到有足够的空间。如果浮动元素的高度不同，那么当它们向下移动时可能被其它浮动元素“卡住”：
+ 
+
+三栏式布局三种方法（绝对定位法、margin浮动法和自身浮动法）http://www.zhangxinxu.com/wordpress/2009/11/%E6%88%91%E7%86%9F%E7%9F%A5%E7%9A%84%E4%B8%89%E7%A7%8D%E4%B8%89%E6%A0%8F%E7%BD%91%E9%A1%B5%E5%AE%BD%E5%BA%A6%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80%E6%96%B9%E6%B3%95/，这三种方法共同点就是都需要左右元素脱离普通流，再通过margin控制中间元素的位置。我还想通过display:inline-block实现但因为不能实现中间元素的宽度自适应而失败以后慢慢探索。
+二、	如何自适应宽度
+块级元素的宽度默认值是把父级元素填满，但不是100%。
+Task4
+after伪类是在最后生成一个子元素，比如p:after{content：””}生成的元素是p的子元素，必须指定content，即使为空也可以。IE8以上支持。
+关于vertical-align，可以指定负长度值和百分比值，该属性作用于与行内块（display:inline-block），如何确定行内多个元素的位置：总的原则就是让所有行内元素的基线在一条直线上，未设置vertical-align，就是采用vertical-align的默认值baseline，基线就在该元素的baseline处，设置为middle的基线就在本身元素的中间处，等等吧，当为数值时该元素基线在baseline的基础上移动，百分比是是相当于line-height的百分比。当行内就一个元素时设置vertical-align无任何意义。text-align作用在本身元素的父元素时才对本身元素起作用。vertical-align作用于本身元素
+垂直居中方法：
+1相对定位top：50%，margin：负的需垂直居中的元素的高度。
+2 设置行内块元素，用vertical-align和text-align，最后再生成一个行内块元素after伪类。缺点；当宽度小于行内块的宽度和伪类的宽度之和时，伪类会自动到下一行，vertical-align会失去作用，起不到定位作用
+3 任何元素都可以使用 display:table / display:table-cell来实现与 table 一样的功能。那么，只要支持 display:table 的浏览器，已经可以轻松解决，只要这样写代码： 
+代码如下:
+<!-- DOM 结构 --> 
+<div> <p>content</p> </div> 
+/* CSS 实现 */ 
+div { display:table; } p{ display:table-cell; vertical-align:middle; } 
+Task5
+（见上图）运用浮动的时候因为没掌握好框2高度，使框2高度大于框1，设置框3右浮动的时候框3不能到框2下面，被框2卡在框1下面，所以设置浮动要弄清楚各块的高度
+Task6
+如何设置背景透明，文字不透明background-color：rgba(255,255,255,0.4)
+字间距140%，左对齐和右对齐，段落间距小于字的大小，这三样都没有标准化的要求格式，自己怎么实现都可以。Width:100%，是以父元素2padding+content为基数的100%。
+Task8
+学习bootstrap布局
+Task9
+问题：1 input边框的颜色，四条边框分了两个颜色。
+2 margin塌陷的问题。问题发生在父子盒子之间。解决方法父盒子加padding-top或border-top，或者设置overflow:hidden;
+3 tab切换的问题，利用checked伪类实现。
+4 媒体查询
+Task10
+Flex布局： display: flex | inline-flex;
+Flex-direction: row | row-reverse | column | column-reverse
+Flex-wrap: nowrap | wrap | wrap-reverse
+Flex-flow
+Justify-content: flex-start | flex-end | center | space-between | space-around
+Align-item: flex-start | flex-end | center | baseline | stretch
+Align-content: flex-start | flex-end | center | space-between | space-around | stretch
+
+Order默认值 0
+Flex-grow:  <number> 默认值 0
+Flex-shrink: <number> 默认值 1
+Flex-basis: <length> | auto
+Flex
+Align-self: auto | flex-start | flex-end | center | baseline | stretch
+Task11
+Css3动画
+Task15
+数组的sort（）方法。当参数是函数时，比如
+Function compare(a,b){
+	If(a<b){
+	Return -1;
+}else if(a>b){
+	Return 1;
+}else {
+Return 0;
+}
+}
+这是一个简单的升序函数，a和b是数组里的任意两项，a和b的顺序只与返回值有关，返回值为正数，a就在b后面。条件语句只是当满足一个什么样的条件是，a和b的顺序怎么样排列。
+Task17（11.11-）
+当数组以键值对的形式的时候for（var a in array）语句里的a指的是数组里的键，当以普通数组形式出现时，a就是数组各项的位置数字值。
+Label和input关联时，会触发两次click事件
+选择框（select）的value值
+Display：inline-block和float，当元素的高度不一致时，Display：inline-block是底部对齐，float是顶部对齐。
+
