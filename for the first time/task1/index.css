@@ -1,0 +1,157 @@
+﻿* {
+	padding: 0;
+	margin: 0;
+}
+body {	
+	background: #ddd;
+}
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	height: 50px;
+	background: #222;
+}
+nav img {
+	margin-left: 100px;
+	margin-top: 10px;
+}
+nav ul {
+	float: right;
+	margin-right: 30px;	
+}
+nav ul li {
+	float: left;
+	margin-left: 30px;
+	line-height: 50px;	
+}
+nav ul li a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+}
+nav ul li a span{
+	opacity: .3;
+}
+article {
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 900px;
+	background: #fff;
+	box-shadow: 1px 2px 1px 1px #848484;
+}
+article h2,
+article h3,
+article p {
+	padding: 10px 0;
+}
+article span {
+	display: block;
+	padding: 10px 0;
+	font-size: 14px;
+}
+article p {
+	text-indent: 2em;
+	line-height: 25px;
+}
+.a2 ul {
+	margin-top: 15px;
+	margin-left: 15px;
+	list-style-type: none;
+}
+.a2 ul li {
+	padding: 5px;
+}
+.a3 strong {
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 20px;
+}
+.a3 div {
+	margin-top: 15px;
+	margin-left: 45px;
+	border: solid 1px #ccc;
+	width: 140px;
+}
+.a3 div img {
+	margin: 0 20px 20px 20px;
+	border: solid 1px #ccc;
+	width: 100px;
+	height: 100px;
+}
+.a4 ol {
+	margin-left: 40px;	
+}
+.a4 table {
+	border-collapse: collapse;	
+	font-size: 14px;
+	width: 888px
+}
+
+.a4 table tr th {
+	background: #000;
+	color: #fff;	 
+}
+.a4 table tr td {
+	padding-left: 10px;
+	border: 1px solid #ccc;
+}
+.sum {
+	border: none;
+	background: #ccc;
+}
+.operate {
+	width: 200px;
+}
+.a5 h3 {
+	border-left: 5px solid #ccc;
+	padding-left: 30px;
+}
+.a5 p {
+	padding: 0;
+	height: 30px;
+	line-height: 30px;	
+}
+.a5 p span {	
+	float: left;
+	width: 400px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	text-align: right;	
+}
+.a5 p span.right {    
+	text-align: left;	
+    text-indent: 10px;
+}
+.a5 p span em {   
+	display: inline-block;	
+	margin-right: 5px;
+	margin-left: -5px;
+	font-style: normal;
+}
+.a5 p input.text {	
+	float: left;
+	padding: 0;
+	margin-left: 10px;
+	height: 25px;	
+}
+.a5 p textarea {
+	float: left;
+	padding: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 25px;	
+	width: 300px;
+	height: 100px;
+}
+.a5 .submit {
+	width: 100%;
+	padding: 5px;
+	margin-top: 10px;
+	border: 1px solid #00f;
+	border-radius: 8px;
+	background: #00f;
+}

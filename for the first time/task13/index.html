@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>task13</title>
+<script src="index.js"></script>
+<link rel="stylesheet"  href="index.css" />
+<link rel="stylesheet" href="aa.css" />
+</head>
+<body>
+
+  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button">确认填写</button>
+
+  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+(function() {
+  /*	
+  在注释下方写下代码
+  给按钮button绑定一个点击事件
+  在事件处理函数中
+  获取aqi-input输入的值，并显示在aqi-display中
+  */
+  var button=document.getElementById("button");
+
+  button.onclick=function(){
+	var input = document.getElementById("aqi-input");	
+	var display=document.getElementById("aqi-display");
+	alert(typeof input.value)
+	if(input.value){
+		display.innerHTML=input.value;
+	}else {
+		display.innerHTML="尚未输入";
+	}
+  }
+})();
+
+</script>
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

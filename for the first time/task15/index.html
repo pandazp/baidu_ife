@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>task15</title>
+<script src="index.js"></script>
+<link rel="stylesheet"  href="index.css" />
+<link rel="stylesheet" href="aa.css" />
+</head>
+<body>
+  <ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+  </ul>
+
+  <ul id="resort">
+    <!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+  </ul>
+
+  <button id="sort-btn">排序</button>
+
+<script type="text/javascript">
+
+/**
+ * getData方法
+ * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
+ * 返回一个数组，格式见函数中示例
+ */
+ var sul=document.getElementById("source");
+ var resort=document.getElementById("resort");
+ var sort_btn=document.getElementById("sort-btn");
+ var sli=sul.getElementsByTagName("li");
+ 
+function getData() {
+  /*
+  coding here
+  */
+
+  /*
+  data = [
+    ["北京", 90],
+    ["北京", 90]
+    ……
+  ]
+  */
+ var data=[];
+ for(var i=0;i<sli.length;i++){
+	var temp=[];
+	temp.push(sli[i].innerHTML.substring(0,2));
+	temp.push(sli[i].innerHTML.substring(10,12));
+	data.push(temp);
+ }
+  return data;
+
+}
+
+/**
+ * sortAqiData
+ * 按空气质量对data进行从小到大的排序
+ * 返回一个排序后的数组
+ */
+ /*升序函数*/
+function compare(a,b){
+	return a[1]-b[1];
+}
+
+/*交换数组前两项的位置
+function exchange(data){
+		var exdata=[];
+	for(var i=0;i<data.length;i++){
+		var temp=[];
+		temp.push(data[i][1]);
+		temp.push(data[i][0]);
+		exdata.push(temp);
+	}
+	return exdata;
+}
+*/
+
+
+function sortAqiData(data) {
+	return data.sort(compare);
+}
+
+/**
+ * render
+ * 将排好序的城市及空气质量指数，输出显示到id位resort的列表中
+ * 格式见ul中的注释的部分
+ */
+function render(data) {
+	for(var i=0;i<data.length;i++){
+		var li=document.createElement("li");
+		li.innerHTML="第"+(i+1)+"名："+data[i][0]+"空气质量：<b>"+data[i][1]+"</b>";
+		resort.appendChild(li);
+	}
+}
+
+function btnHandle() {
+  var aqiData = getData();
+  aqiData = sortAqiData(aqiData);
+  render(aqiData);
+}
+
+function init() {
+
+  // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+	sort_btn.addEventListener("click",btnHandle,false);
+}
+
+init();
+
+</script>
+</body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,179 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+}
+html,body {
+	height: 100%;
+	width: 100%;	
+}
+
+.a {
+	position: relative;
+	top: 50%;
+	overflow: hidden;	
+	margin: auto;
+	margin-top: -100px;
+	height: 200px;
+	width: 400px;
+	background: #ccc;
+}
+.b {
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	width: 0;	
+	border: 50px #fc0 solid;
+	border-radius: 50px;
+}
+.c {
+	position: absolute;
+	top: 150px;
+	left: 350px;
+	width: 0;	
+	border: 50px #fc0 solid;
+	border-radius: 50px;
+}
+
+
+/*
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="index.css" media="screen" title="no title" charset="utf-8">
+    <title>Mission1_3</title>
+</head>
+<body>
+
+
+<div class="a">
+	<div class="b">
+	
+	</div>
+	<div class="c">
+	
+	</div>
+</div>
+
+</body>
+</html>
+
+样式
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html ,body{
+	height: 100%;
+	width: 100%;	
+}
+body {		
+	text-align:center;
+}
+.a {
+	vertical-align: middle;
+	position: relative;
+	overflow: hidden;	
+	display: inline-block;
+	height: 200px;
+	width: 400px;
+	background: #ccc;
+}
+.b {
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	width: 0;	
+	border: 50px #fc0 solid;
+	border-radius: 50px;
+}
+.c {
+	position: absolute;
+	top: 150px;
+	left: 350px;
+	width: 0;	
+	border: 50px #fc0 solid;
+	border-radius: 50px;
+}
+body:after {	
+	vertical-align: middle;
+	overflow: hidden;		
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	content: "";	
+}
+
+*/
+/*
+<div id="q">
+	<div class="a">
+		<div class="b"></div>
+		<div class="c"></div>
+	</div>
+</div>
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html ,body{
+	height: 100%;
+	width: 100%;	
+}
+body {			
+	display: table;	
+}
+#q {
+	display: table-cell;	
+	vertical-align: middle;		
+}
+
+.a {	
+	margin: 0 auto;
+	border: 1px #f00 solid;	
+	position: relative;
+	overflow: hidden;	
+	height: 200px;
+	width: 400px;
+	background: #ccc;
+}
+.b {
+	display: inline-block;
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	width: 0;	
+	border: 50px #fc0 solid;
+	border-radius: 50px;
+}
+.c {
+	display: inline-block;
+	position: absolute;
+	top: 150px;
+	left: 350px;
+	width: 0;	
+	border: 50px #fc0 solid;
+	border-radius: 50px;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

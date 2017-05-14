@@ -1,0 +1,509 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+body {
+	width: 1349px;
+}
+header {
+	height: 50px;
+	min-width: 1100px;
+	background: #2189bf;
+}
+header img {
+	padding: 2px;
+	margin-left: 50px;
+	margin-top: 8px;
+	background: #fff;
+}
+header div {
+	float: right;
+	margin-top: 12px; 
+	margin-right: 60px;	
+}
+header div input {
+	border: 0; 
+	margin-right: 20px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 25px;
+}
+header div span {
+	color: #fff;
+	font-size: 12px;
+}
+aside {
+	float: left;
+	width: 200px;
+	height: 1240px;
+	background: #2a2d3d;
+}
+aside p {
+	margin: 10px 20px;
+	color: #576477;	
+}
+.aside-p1 {
+	color: #fff;
+}
+.aside-p1 span {
+	display: inline-block;	
+	border: 20px solid #bababe;
+	border-radius: 20px;
+	vertical-align: middle;	
+}
+.aside-d1 {
+	padding-left: 20px;
+}
+.aside-d1 p {
+	margin: 0;
+	display: inline-block;
+	padding: 10px 20px;
+}
+.aside-d1 p:nth-child(1) {
+	border-right: 1px solid #576477;
+}
+.aside-d2 {
+	margin-top: 10px;
+	padding: 5px 0 5px 25px;
+	background: #383d4e;
+}
+
+.p-color {
+	color: #fff;
+}
+.aside-d2 p {
+	margin: 10px 0;
+	
+}
+main {
+	float: left;	
+	padding: 20px 40px;
+	background: #eeeeed;
+	width: 1060px;
+}
+main > div {
+	margin: 20px 0;
+}
+main > p {
+	margin-top: -20px;
+	margin-left: -40px;
+	margin-right: -40px;	
+	line-height: 35px;
+	text-indent: 20px;
+	background: #fff;
+}
+main > p span {
+	color: #22f;
+}
+.main-d1 {	
+	background: #fff;
+}
+.main-d1 div {
+	display: inline-block;	
+	margin: 10px 20px;
+	vertical-align: top;
+}
+.main-d1 div:nth-child(1) {
+	margin-top: 15px;
+}
+
+.main-d1 div:nth-child(1) span {
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid #e6e7e7;
+	vertical-align: middle;
+	width: 70px;
+	background: url(images/arrow.png) no-repeat 55px 8px ;
+}
+.search-s {
+	background: transparent;
+	width:100px;
+	border: none;
+}
+
+.main-d1 div:nth-child(2) p {
+	padding: 3px 0;
+}
+.main-d1 div:nth-child(2) p select {
+	width: 150px;
+}
+.main-d1 div:nth-child(3) p {
+	padding: 3px 0;
+	width: 350px;
+}
+.main-d1 div:nth-child(3) p span {
+	display: inline-block;
+	border: 1px solid #777;
+	width: 150px;
+}
+.quantity {
+	width: 70px;
+}
+.item {
+	width: 152px;
+}
+.main-d1 div:nth-child(4) {
+	border-radius: 3px;
+	padding-top: 2px;
+	margin-top: 20px;
+	width: 50px;
+	height: 30px;
+	font-size: 18px;
+	text-indent: 8px;
+	background: #388ac1;
+	color: #fff;
+}
+
+.main-d2 > div {
+	float: left;
+	margin-right: 7px;
+	padding-top: 5px;
+	height: 75px;
+	background: #fff;	
+}
+.main-d2 > div:nth-child(1),
+.main-d2 > div:nth-child(8) {
+	width: 30px;
+	height: 66px;
+	padding-top: 14px;
+	font-size: 30px;
+	color: #555;
+	text-align: center;
+}
+.time {
+	width: 132px;
+}
+.time p {
+	padding-top: 5px;
+	text-align: center;
+}
+.time p span {
+	font-size: 25px;
+	color: #ee7b3a;
+}
+.main-d2 > div:nth-child(2) {
+	border-top: 5px solid #4288c8;
+	padding-top: 0;
+}
+.main-d2 > div:last-child {
+	margin-right: 0;
+	width: 130px;
+	padding-right: 20px;
+}
+.main-d2 > div:last-child img {
+	margin: 20px 10px 20px 20px;
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+}
+.main-d2:after {
+	content: "clear";
+	display: inline-block;
+	height: 80px;
+	width: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+	
+.main-d3 > div {
+	float: left;
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-radius: 2px;
+	margin-top: 5px;
+	margin-right: 7px;
+	padding: 5px 0;
+	width:252px;
+	height: 75px;
+	background: #fff;	
+}	
+.main-d3 > div:nth-child(2) {
+	border-color: #43b29d;
+}	
+.main-d3 > div div {
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 10px;
+}	
+.main-d3 > div div p {
+	margin-bottom: 8px;	
+}	
+.main-d3 > div:after {
+	content: "";
+	display: inline-block;
+	margin-left: 40px;
+	width: 70px;
+	height: 50px;
+	vertical-align: -5px;
+	background: #43b29d;	
+}
+.main-d3:after {
+	content: "clear";
+	display: block;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	clear: both;
+}	
+
+.main-d4:after {
+	content: "clear";
+	display: block;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	clear: both;
+}	
+.main-d4 > div {
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 392px;
+	background: #fff;
+}
+.main-d4 > div h2,
+.main-d5 > div h2 {
+	border-bottom: 1px solid #f4f5f6;	
+	margin-bottom: 20px;
+	background: #ddd;
+	text-indent: 2em;
+	line-height: 40px;
+}
+.main-d4-d1 p {
+	display: inline-block;
+	position: relative;
+	margin-right: 5px;	
+	width: 100px;
+	line-height: 30px;
+	text-align: center;
+	background: #ededef;
+	z-index: 1;
+}
+.main-d4-d1 p:nth-child(2) {
+	position: relative;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #cbcbcb;
+	border-radius: 5px 5px 0 0;
+	margin-left: 25px;
+	background: #fff;
+	z-index: 3;
+}
+.main-d4-d1 div {
+	position: relative;
+	border: 1px solid #cbcbcb;
+	border-radius: 0 5px 5px 5px;
+	margin-left: 25px;
+	margin-top: -1px;
+	margin-bottom: 40px;
+	margin-right: 25px;
+	width: 570px;
+	z-index: 2;
+}
+.main-d4 table {
+	border-collapse: collapse;
+	margin: 30px 10px 40px 40px;
+	
+}
+.main-d4 table td {
+	border: 1px solid #cbcbcb;
+	width: 120px;
+	line-height: 30px;
+	text-align: center;
+}
+.cell {
+	background: #f3f5f6;
+}
+div.main-d4-d2 {
+	position: relative;
+	margin-right: 0;
+	width: 404px;
+}
+.main-d4-d2 > p {
+	margin-left: 50px;
+	line-height: 25px;
+}
+.main-d4-d2 > p {
+	margin-left: 50px;
+	line-height: 25px;
+}
+.main-d4-d2 > div {
+	border-bottom: 1px solid #ccc;
+	margin-left: 40px;
+}
+.main-d4-d2 > div p {
+	display: inline-block;
+	padding-left: 10px;
+}
+.main-d4-d2 > div p:nth-child(1) {
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	border-color: #ccc;
+	padding-right: 50px;
+}
+.main-d4-d2 > div p:nth-child(2) {
+	border-top: 1px solid #ccc;
+	width: 200px;
+}
+.main-d4-d2 > p:last-child {
+	position: absolute;
+	top: 320px;
+	padding-top: 5px;
+	margin-left: 40px;
+	border-top: 1px solid #ccc;
+	width: 310px;
+}
+.main-d4-d2 > p input {
+	position: absolute;	
+	width: 13px;
+	height: 13px;
+	z-index: -1;
+}
+label span {
+	display: inline-block;
+	line-height: 15px;
+	text-indent: 2px;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;	
+	background: #d6d6d6;
+	
+}
+.main-d4-d2 > p > span {
+	display: inline-block;
+	border-radius: 5px;
+	margin-left: 146px;
+	width: 50px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	background: #398bc2;
+}
+.color {
+	color: #ccc;
+}
+
+.main-d5 > div {
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #fff;
+}
+.main-d5 > div > p {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.month {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	border: 1px solid #777;	
+	height: 19px;
+}
+.month select {
+	border: none;
+	width: 50px;
+	background:  url(images/arrow.png) no-repeat 35px 8px ;
+	-moz-appearance: none;
+	margin: 0 5px;
+	height: 18px;
+}
+.back {
+	display: inline-block;
+	padding: 0 5px;
+	border: 1px solid #777;	
+	height: 19px
+}
+.week {
+	border-top: 2px solid #a9cfec;
+	border-bottom: 2px solid #e1e2e2;
+	margin-top: 20px;
+	padding: 5px 20px;
+	letter-spacing: 38px;
+}
+.calender {
+	margin: 0 20px 20px 20px;
+}
+.calender td {
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 44px;
+}
+.calender td p {	
+	font-size: 12px;
+}
+.border {
+	border: 1px solid #f7d564;
+}
+.rank {
+	margin: 20px 30px;
+	border-collapse: collapse;
+}
+.rank td {
+	border: 1px solid #ccc;
+	margin: 20px 30px;	
+}
+.rank tr td:nth-child(1) {
+	width: 70px;	
+	text-align: center;
+}
+.rank tr td:nth-child(2) {
+	width: 100px;	
+	text-align: center;
+}
+.rank tr td:nth-child(3) {
+	padding: 3px 0;
+	width: 337px;
+	text-indent: 2em;	
+}
+
+.rank td span {
+	display: inline-block;
+	position: relative;
+	top: -4px;
+	left: 10px;
+	background: #e1e1e2;
+	width: 200px;
+    height: 5px;	
+}
+.rank td span:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	background: #f00;
+	width: 120px;
+    height: 5px;	
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,369 @@
+﻿* {
+	padding: 0;
+	margin: 0;
+}
+body > div {
+	margin: auto;
+	padding: 0 44px 0 44px; 
+	height: 1386px;
+	width: 892px;	
+}
+header {
+	position: relative;
+	border-bottom: solid #938e8c 2px;	
+}
+header p {
+	display: inline-block;
+	height: 61px;
+	width: 110px;
+	background: #f00;	
+}
+header p a {
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 5px;
+	text-decoration: none;
+	font: normal 12px SimHei;
+	color: #fff;	
+}
+header span {
+	position: absolute;
+	right: 0;
+	top: 40px;
+	display: inline-block;
+	font: normal 12px SimHei;
+	color: #d45d5c;	
+}
+
+footer {
+	position: relative;	
+	border-top: solid #938e8c 1px;
+	height: 61px;	
+}
+footer a {
+	display: inline-block;	
+	position: absolute;
+	right: 0;
+	top: 0px;
+	font: normal 12px SimHei;
+	text-decoration: none;
+	color: #d45d5c;	
+}
+main {
+	position: relative;
+	margin: 20px 0;
+}
+.up img {
+	height: 301px;
+	width: 641px;
+}
+.up > p {
+	position: absolute;
+	top: 0;
+	height: 301px;
+	width: 191px;
+	opacity: .2;	
+}
+.img_L {
+	background: #0f0;
+	left: 0;
+}
+.img_R {
+	background: #f00;
+	left: 450px;
+}
+.up > div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #cc8091;
+	height: 301px;
+	width: 203px;
+	overflow: hidden;
+}
+
+.up .up_1 {
+	font-family: Microsoft YaHei;
+	font-size: 24px;
+	font-variant: small-caps;
+	text-decoration: underline;
+	line-height: 40px;
+	color: #000;
+}
+.up .up_2 {
+	line-height: 10px;
+	font-family: KaiTi;
+	font-size: 12px;
+	color: #676767;
+}
+.up .up_3 {
+	font-family: Microsoft YaHei;
+	font-style: italic;
+	font-size: 116px;
+	text-indent: -15px;
+	color: #75b86b;
+	line-height:143px;
+}
+.up div div {
+	position: relative;
+	height: 55px;
+}
+.up .up_4 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: Microsoft YaHei;
+	font-size: 55px;
+	line-height: 55px;
+	color: #cc8091;
+}
+.up .up_5 {
+	position: absolute;
+	top: 15px;
+	left: 80px;
+	font-family: Microsoft YaHei;
+	font-size: 21px;
+	color: #cc8091;
+}
+.up .up_6 {
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	font-family: Microsoft YaHei;
+	font-size: 12px;
+	color: #cc8091;
+}
+
+.middle > div {
+	float: left;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 220px;
+}
+
+.middle:after {
+	content: "clear";
+	display: block;
+	clear: both;
+	width: 0;
+	visibility: hidden;
+}
+.middle_head {
+	display: block;
+	font: normal bold 16px/50px "Microsoft YaHei";
+	text-decoration: underline;
+}
+.middle > p {
+	font: normal bold 12px/16px "Microsoft YaHei";
+}
+.middle_L > span{
+	color: #418c59;
+}
+.middle_C > span{
+	color: #d2994f;
+}
+.middle_R > span{
+	color: #cc7680;
+}
+.middle_L > p{
+	font: normal 12px/16px "宋体";
+	color: #767777;
+	opacity: .7;
+}
+.middle_C > p{
+	font: normal 12px/16px "Microsoft YaHei";
+	color: #231815;
+	opacity: .7;
+}
+.middle_R > p{
+	font: normal 12px/20px "Microsoft YaHei";
+	color: #231815;
+	opacity: .7;
+}
+.middle_R div{
+	margin-top: 20px;
+}
+ .middle_R div p{	
+	font: normal 12px/16px "Microsoft YaHei";
+	opacity: .7;
+}
+.middle_R div span{	
+	font-style: italic;
+	color: #cd4a48;
+}
+
+.down {
+	position: relative;
+}
+.down_L {
+	width: 415px;
+}
+.down_L_p1 {
+	font: normal bold 42px/42px "黑体";
+	color: #11456b;	
+}
+.down_L_p1 span {
+	font: italic bold 72px/72px "黑体";
+	color: #f5e327;	
+}
+.down_L_p2 {
+	font: normal bold 33px/50px "黑体";
+	color: #11456b;	
+}
+.down_L hr {
+	margin: 10px 0;
+	border: 1px solid #11456b;
+}
+.down_L_p3,
+.down_L_p4 {
+	font: normal 12px/16px "宋体";
+	color: #767777;	
+}
+.down_L_p3 span {
+	float: left;
+	margin: -5px 7px 5px 0; 
+	font: normal 70px/80px "Microsoft YaHei";
+	color: #f5e327;	
+}
+.down_L_p3 img {
+	float: right;
+	margin: 20px 0 10px 20px;
+	height: 320px;
+	width: 200px;
+	
+}
+.down_L_p4 {
+	text-indent: 2em;
+}
+.down_R {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.down_R_T img {
+	width: 458px;
+	height: 275px;
+}
+.down_R_T p {
+	position: absolute;
+	top: 214px;
+	width: 458px;
+	height: 61px;
+	background-color: rgba(0,0,0,.4);
+	font: italic 12px "Microsoft YaHei";
+	color: #72b16a;
+}
+.down_R_T p span {
+	display: inline-block;
+	border-left: 3px solid #72b16a;
+	margin-left: 30px;
+	margin-top: 8px;
+	margin-right: 5px;
+	padding-left: 15px;
+	height: 44px;
+	font: normal 26px "Microsoft YaHei";
+	color: #fff;	
+}
+
+.down_R_D {
+	position: relative;
+	margin-top: 30px;
+	padding-top: 2px;
+	width: 459px;
+	height: 318px;
+	background: #edd;	
+}
+.triangular {
+	display: inline-block;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #00f;
+	margin-right: 5px;
+	width: 0;
+	height: 0;
+}
+
+.down_R_D > p {
+	margin: 20px;
+	font: normal 16px/20px "宋体";
+	color: #5a5b5b;
+	text-align: left;
+}
+.down_R_D > p em {
+	font: italic 12px/20px "宋体";
+	color: #5a5b5b;
+	text-align: right;
+}
+.down_R_D_p  {
+	position: relative;
+	top: 15px;
+	width: 260px;
+	height: 160px;
+	background: #f00;
+}
+.down_R_D_p  p {
+	display: inline-block;
+	vertical-align: middle;
+}
+.down_R_D_p:before {
+	content: "middle";
+	display: inline-block;
+	height: 160px;
+	width: 0;
+	vertical-align: middle;
+	visibility: hidden;
+}
+.down_R_D_p1 {
+	display: inline-block;
+	font: normal 110px "Microsoft YaHei";
+	color: #fff;
+}
+.down_R_D_p2 {
+	display: inline-block;
+	border-left: 2px solid #fff;
+	margin-left: 10px;
+	padding-left: 10px;
+	height: 86px;
+	width: 160px;
+	font: italic 21px/24px "黑体";
+	color: #fff;
+}
+.down_R_D_p2 span {
+	font: normal 12px/16px "黑体";
+	color: #fff;
+}
+.hello {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 180px;
+	height: 160px;
+	font: italic 14px/16px "黑体";
+	color: #5a5b5b;
+}
+.hello1 {
+	display: inline-block;
+	height: 33px;
+	width: 37px;
+	vertical-align: bottom;
+	font: normal 72px "黑体";
+	color: #f00;
+	text-align: right;
+	text-indent: -37px;
+}
+.hello2 {
+	display: inline-block;
+	height: 33px;
+	width: 37px;
+	vertical-align: top;
+	font: normal 72px "黑体";
+	color: #f00;
+	text-indent: 47px;
+}
+
+
+
+
+
+
+/* 641+203=844 892*/

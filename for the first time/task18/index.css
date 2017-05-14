@@ -1,0 +1,36 @@
+#wrapper {
+	display: inline-block;
+} 
+
+#wrapper input {
+	border: 1px solid;
+	border-radius: 3px;
+	padding-bottom: 2px;
+	line-height: 20px;
+	background: #fff;
+	cursor: pointer;
+}
+
+input:nth-child(2) {
+	margin-right: 20px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 10px;
+}
+ul:after {
+	content: "";
+	display: block;
+	clear: both;
+	width: 0;
+	
+}
+li {
+	float: left;
+	line-height: 30px;
+	padding: 5px;
+	background: #f00;
+	margin: 5px;
+	cursor: pointer;
+}

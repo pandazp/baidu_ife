@@ -1,0 +1,15 @@
+$color: #f00;
+
+.a {
+	height: 100px;
+	width: 100px;
+	border: 1px solid $color; 
+}
+p {
+	width: 100px;
+	height: 100px;
+	background: #f00;
+	&.p2~p {
+		background: #ff0;
+	}
+}
